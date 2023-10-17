@@ -1,23 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:gommy_app/presetation/screens/main_user_screen.dart';
 
-void main() => runApp(const MyApp());
+void main() {
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Gommy',
+    
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Gommy'),
-        ),
-        body: const Center(
-          child: Text('Hola'),
-        ),
-      ),
+      home: MainUserScreen(),
     );
   }
 }
