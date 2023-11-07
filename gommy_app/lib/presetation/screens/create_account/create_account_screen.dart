@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
-class ActivitiesScreen extends StatefulWidget {
-  const ActivitiesScreen({super.key});
+class CreateAccountScreen extends StatefulWidget {
+
+  static const String name = 'create_account_screen';
+  const CreateAccountScreen({super.key});
 
   @override
-  State<ActivitiesScreen> createState() => _ActivitiesScreenState();
+  State<CreateAccountScreen> createState() => _CreateAccountScreenState();
 }
 
-class _ActivitiesScreenState extends State<ActivitiesScreen> {
+class _CreateAccountScreenState extends State<CreateAccountScreen> {
   int clickCounter = 0;
 
   @override
@@ -86,9 +88,9 @@ class _ActivitiesScreenState extends State<ActivitiesScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Activities',
+              'Create A',
               style:
-                TextStyle(fontSize: 160, fontWeight: FontWeight.w100),
+                TextStyle(fontSize: 120, fontWeight: FontWeight.w100),
             ),
           ],
         ),

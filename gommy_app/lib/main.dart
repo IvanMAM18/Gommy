@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gommy_app/presetation/screens/main_user_screen.dart';
+import 'package:gommy_app/config/router/app_router.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,10 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
-    return const MaterialApp(
+    return  MaterialApp.router(
+      routerConfig: appRouter,
       debugShowCheckedModeBanner: false,
-      home: MainUserScreen(),
     );
   }
 }

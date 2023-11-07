@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
-class ConfigUserScreen extends StatefulWidget {
-  const ConfigUserScreen({super.key});
+class LoginScreen extends StatefulWidget {
+
+  static const String name = 'login_screen';
+  const LoginScreen({super.key});
 
   @override
-  State<ConfigUserScreen> createState() => _ConfigUserScreenState();
+  State<LoginScreen> createState() => _LoginScreenState();
 }
 
-class _ConfigUserScreenState extends State<ConfigUserScreen> {
+class _LoginScreenState extends State<LoginScreen> {
   int clickCounter = 0;
 
   @override
@@ -86,9 +88,9 @@ class _ConfigUserScreenState extends State<ConfigUserScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Config',
+              'Login',
               style:
-                TextStyle(fontSize: 160, fontWeight: FontWeight.w100),
+                TextStyle(fontSize: 120, fontWeight: FontWeight.w100),
             ),
           ],
         ),
